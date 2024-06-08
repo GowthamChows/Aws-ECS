@@ -44,4 +44,4 @@ jobs:
         docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com/hello-world-repo:latest
 
     - name: Deploy to ECS
-      run: aws ecs update-service --cluster hello-world-cluster --service hello-world-service --force-new-deployment 
+      run: aws ecs update-service --cluster hello-world-cluster --service hello-world-service --force-new-deployment
